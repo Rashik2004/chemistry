@@ -1,0 +1,194 @@
+#aboutpic{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./pixcels/background-1487559_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+  /* header */
+nav {
+    display: block;
+    padding: 2% 1%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.791);
+}
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+.nav-links ul li {
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+    margin-inline: 20px;
+    color: #ddb816;
+    font-size: 14px;
+}
+.nav-links ul li a {
+    color: #e9d30e;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0.5px solid black;
+    background-color: linear-gradient(rgba(4, 9, 30, 0.4));
+}
+/* drop down list*/
+
+/* drop down list*/
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+    transition-duration: 0.5s;
+    text-shadow: rgba(0,225,255,1) 0px 0px 14px;
+}
+/* header */
+
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+h2{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px #ffffff;
+    padding: 15px;
+}
+
+h1{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+}
+h1:hover{
+    text-shadow: 2px 5px 2px rgb(228, 150, 122);
+    font-size: 100px;
+}
+#content{
+    text-align: center;
+    justify-content: center;
+    background-color: #57595b ;
+    color: #ffd900;
+    font-size: 1.6rem;
+    text-align: center;
+    row-gap: 6px;
+}
+#content p{    
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+/* card */
+.card-image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 3px;
+    border: 3px solid #e7be08
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 77.58px;
+    display: inline-block;
+    background-color: #363636;
+    margin: 0%;
+    
+}
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #e7be08;
+}
+.card:hover{
+    transition: all 0.3s ease;
+    -webkit-box-shadow:0px 10px 20px 20px rgba(255, 210, 60, 0.867);
+        -moz-box-shadow: 0px 10px 20px 20px rgba(255, 210, 60, 0.867);
+        box-shadow: 0px 10px 20px 20px rgba(255, 210, 60, 0.867);
+}
+
+
+.image-content, .card-content{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(39, 40, 41);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.description{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(62, 64, 65);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.overlay{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #6e6f70;
+    border-radius: 25px 25px 0px 0px;
+}
+.button{
+    font-size: 16px;
+    border: none;
+    padding: 5px 10px;
+    color: #f4f0f0;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    color: #e7be08;
+    background-color: rgb(39, 40, 41);
+    font-size: 18px;
+}
+.h1{
+    padding: 20px;
+    font-size: 45px;
+    text-align: center;
+    text-shadow: 2px 1px 2px rgba(246, 213, 27, 0.7);
+    background-color: #363636;
+    color: #f4f0f0;
+}
+/* cards */
